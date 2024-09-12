@@ -2,8 +2,10 @@ Sub ShowAllNames()
 
     Dim n As Name
 
-    For Each n in ActiveWorkbook.Names
+    For Each n In ActiveWorkbook.Names
         n.Visible = True
     Next n
+
+    MsgBox "All names are now visible.", vbOKOnly, "Operation Completed"
 
 End Sub
