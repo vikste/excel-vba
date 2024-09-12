@@ -1,0 +1,9 @@
+Sub ShowAllNames()
+
+    Dim n As Name
+
+    For Each n in ActiveWorkbook.Names
+        n.Visible = True
+    Next n
+
+End Sub
